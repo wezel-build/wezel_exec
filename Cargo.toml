@@ -1,13 +1,13 @@
 [package]
-name = "forager_exec"
+name = "wezel_exec"
 version = "0.1.0"
 edition = "2024"
-repository = "https://github.com/wezel-build/forager_exec"
+repository = "https://github.com/wezel-build/wezel_exec"
 publish = false
 license = "Apache-2.0"
 
 [[bin]]
-name = "forager-exec"
+name = "wezel_exec"
 path = "src/main.rs"
 
 [package.metadata.dist]
