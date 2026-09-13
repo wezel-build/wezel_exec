@@ -42,4 +42,9 @@ impl Forager for Exec {
     }
 }
 
-forager_sdk::forager_main!(Exec);
+fn main() {
+    if let Err(error) = forager_sdk::run::<Exec>() {
+        eprintln!("{}: {error:#}", env!("CARGO_BIN_NAME"));
+        std::process::exit(1);
+    }
+}
